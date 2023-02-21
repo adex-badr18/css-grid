@@ -1,0 +1,111 @@
+/* Clear default browser styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    gap: 50px;
+    height: 100vh;
+    /* define the number of columns and width of columns */
+    /* grid-template-columns: 200px auto 100px; */
+
+    /* make all 3 columns to be equal in size */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    /* column-gap works with grid-template-column */
+    /* column-gap: 50px; */
+
+    /* define the number of rows and width of rows */
+    /* grid-template-rows: 200px auto 100px; */
+    /* grid-template-rows: 200px auto 100px; */
+    
+    /* make all 3 columns to be equal in size */
+    /* grid-template-rows: repeat(3, 1fr); */
+
+    /* row-gap places a gap btw rows in the grid. It works with grid-template-rows */
+    /* row-gap: 50px; */
+
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+
+    /* grid-template property is a shorthand of both grid-template-columns and grid-template-rows */
+    grid-template: 1fr 1fr / 1fr 1fr;
+
+    /* justify-content positions all items in the grid container along the main axis. */
+    /* justify-content: space-evenly; */
+
+    /* align-content property positions all grid-items inside a grid container along the cross axis */
+    /* align-content: space-evenly; */
+
+    /* justify-items property positions grid-items inside grid containers along the main axis */
+    /* justify-items: stretch; */
+
+    /* align-items property positions grid-items inside grid container along the cross axis */
+    /* align-items: stretch; */
+
+
+    /* grid-template-areas: 
+    "A A A A    A A A A     A A A A"
+    "B B B B    B B B B     B B C C"
+    "B B B B    B B B B     B B C C"; */
+
+    
+   
+}
+
+[class ^="box-"] {
+    background-color: skyblue;
+
+    /* Place the letter at the center */
+    display: grid;
+    place-items: center;
+    border: 1px solid yellow;
+
+    /* width: 150px; */
+    /* height: 150px; */
+}
+
+.box-1 {
+    /* grid-area property is used together with grid-template-areas */
+    /* grid-area: A; */
+
+    /* grid-column property is used to assign multiple columns to a grid-item. It is a shorthand for for (grid-column-start and grid-column-end properties.
+    The default scale of every grid-item is: 
+    grid-column-start: 1;
+    grid-column-end: 2;  
+    The shorthand is => grid-column: 1/2 */
+
+    /* Assign 9 columns to box-1 */
+    /* grid-column: 1/10; OR*/ grid-column: span 9
+
+    /* grid-row property is used to assign multiple rows to a grid-item. It is a shorthand for for (grid-row-start and grid-row-end properties.
+    The default scale of every grid-item is: 
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    The shorthand is => grid-row: 1/2 */
+    /* grid-row: 1/11; OR grid-row: span 10 */
+
+}
+
+.box-2 {
+    /* grid-area: B; */
+    justify-self: stretch;
+    align-self: start;
+}
+
+.box-3 {
+    /* grid-area: C; */
+    align-self: center;
+}
