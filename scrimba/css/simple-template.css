@@ -37,6 +37,22 @@ a {
     background-color: #88d8b0;
 }
 
+/* FLEXBOX STYLINGS */
+
+.grid-container > div {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.flex-header > div:nth-of-type(1) {
+    margin-right: 25px;
+}
+
+.logout {
+    margin-left: auto;
+}
+
 
 /* ===================
        NAMED-LINES
