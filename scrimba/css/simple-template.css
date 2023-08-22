@@ -10,6 +10,10 @@ body {
     font-size: 20px;
 }
 
+* {
+    margin: 0;
+}
+
 p {
     color: #96ceb4;
     text-align: center;
@@ -53,6 +57,30 @@ a {
     margin-left: auto;
 }
 
+/* GRID STYLINGS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 250px 40px;
+}
+
+.flex-header {
+    grid-column: 1 / -1;
+}
+
+.menu {
+    grid-column: 1 / span 3;
+    overflow: auto;
+}
+
+.content {
+    grid-column: 4 / -1;
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
 
 /* ===================
        NAMED-LINES
