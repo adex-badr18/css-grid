@@ -1,9 +1,17 @@
 /* ===================
+   CSS GRID & FLEXBOX
+   ===================
+*/
+
+
+
+
+/* ===================
        NAMED-LINES
    ===================
 */
 
-.container {
+/* .container {
     height: 100%;
     display: grid;
     grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
@@ -24,7 +32,7 @@
 
 .footer {
     grid-column: main-start / main-end;
-}
+} */
 
 
 /* ===================
