@@ -2,8 +2,40 @@
    CSS GRID & FLEXBOX
    ===================
 */
+/* BASIC STYLING */
+html,
+body {
+    background-color: #ffeead;
+    margin: 10px;
+    font-size: 20px;
+}
 
+p {
+    color: #96ceb4;
+    text-align: center;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-header {
+    background-color: #96ceb4;
+    color: #ffeead;
+}
+
+.menu {
+    background-color: #ff6f69;
+}
+
+.content {
+    background-color: #ffcc5c;
+}
+
+.footer {
+    background-color: #88d8b0;
+}
 
 
 /* ===================
